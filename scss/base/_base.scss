@@ -1,0 +1,16 @@
+*{
+margin:0px;
+padding:0px;
+}
+
+/*Sticky Footer*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+content {
+  flex: 1;
+}
+

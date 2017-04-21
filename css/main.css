@@ -1,0 +1,146 @@
+/*
+
+Project-Site-Games
+Version 1
+
+
+/* Base files */
+/*Colour Codes*/
+/*Padding settings*/
+/*Header Link*/
+/* line 3, C:/Users/1robig68/Desktop/project-site/scss/base/_normalise.scss */
+h1 a {
+  color: #fff;
+}
+
+/* line 6, C:/Users/1robig68/Desktop/project-site/scss/base/_normalise.scss */
+h1 a:hover {
+  color: #eeeae7;
+}
+
+/*Body Text*/
+/* line 11, C:/Users/1robig68/Desktop/project-site/scss/base/_normalise.scss */
+body {
+  color: #929a9d;
+}
+
+/* line 1, C:/Users/1robig68/Desktop/project-site/scss/base/_base.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Sticky Footer*/
+/* line 7, C:/Users/1robig68/Desktop/project-site/scss/base/_base.scss */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* line 13, C:/Users/1robig68/Desktop/project-site/scss/base/_base.scss */
+content {
+  flex: 1;
+}
+
+/* Layout files */
+/* line 1, C:/Users/1robig68/Desktop/project-site/scss/layouts/_footer.scss */
+footer {
+  width: 100%;
+  background: #efb68b;
+  color: #fff;
+  min-height: 100px;
+  padding-top: 20px;
+}
+
+/* line 1, C:/Users/1robig68/Desktop/project-site/scss/layouts/_header.scss */
+header {
+  width: 100%;
+  min-height: 100px;
+  background: #8678ab;
+  color: #fff;
+}
+
+/* line 1, C:/Users/1robig68/Desktop/project-site/scss/layouts/_nav.scss */
+.breadcrumbs li {
+  font-size: 1rem;
+}
+
+/* Module files */
+/* line 1, C:/Users/1robig68/Desktop/project-site/scss/modules/_blocks.scss */
+.pac_man {
+  background-size: 100% 100%;
+  background-image: url("../imgs/classicpac.jpg");
+}
+
+/* line 6, C:/Users/1robig68/Desktop/project-site/scss/modules/_blocks.scss */
+.jungle {
+  background-size: 100% 100%;
+  background-image: url("../imgs/junglerun.jpg");
+}
+
+/* line 11, C:/Users/1robig68/Desktop/project-site/scss/modules/_blocks.scss */
+.connect4 {
+  background-size: 100% 100%;
+  background-image: url("../imgs/connect4.jpg");
+}
+
+/* line 16, C:/Users/1robig68/Desktop/project-site/scss/modules/_blocks.scss */
+.game {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  min-height: 200px;
+  margin-bottom: 20px;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  text-align: center;
+  padding-top: 70px;
+}
+
+/* line 30, C:/Users/1robig68/Desktop/project-site/scss/modules/_blocks.scss */
+.game_large {
+  min-height: 500px;
+  padding-top: 200px;
+}
+
+/* line 35, C:/Users/1robig68/Desktop/project-site/scss/modules/_blocks.scss */
+.game:hover {
+  opacity: 0.8;
+  color: #eeeae7;
+}
+
+/* line 1, C:/Users/1robig68/Desktop/project-site/scss/modules/_sections.scss */
+.expanded {
+  background: #addebe;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+/* line 1, C:/Users/1robig68/Desktop/project-site/scss/modules/_typography.scss */
+h1, h2, h3 {
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 5px;
+}
+
+/* line 6, C:/Users/1robig68/Desktop/project-site/scss/modules/_typography.scss */
+h3 {
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 10, C:/Users/1robig68/Desktop/project-site/scss/modules/_typography.scss */
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* line 14, C:/Users/1robig68/Desktop/project-site/scss/modules/_typography.scss */
+p {
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=../css/main.map */

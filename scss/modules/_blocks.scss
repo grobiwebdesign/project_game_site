@@ -1,0 +1,38 @@
+.pac_man{
+background-size:$full_width;
+background-image:url('../imgs/classicpac.jpg');
+}
+
+.jungle{
+background-size:$full_width;
+background-image:url('../imgs/junglerun.jpg');
+}
+
+.connect4{
+background-size:$full_width;
+background-image:url('../imgs/connect4.jpg');
+}
+
+.game{
+background-size:$full_width;
+background-repeat: no-repeat;
+color:$white;
+min-height:200px;
+margin-bottom:20px;
+opacity: 1;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+text-align:$middle;
+padding-top:70px;
+}
+
+.game_large{
+min-height:500px;
+padding-top:200px;
+}
+
+.game:hover{
+opacity: 0.8;
+color:$light_grey;
+}

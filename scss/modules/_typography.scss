@@ -1,0 +1,15 @@
+h1, h2, h3{
+text-align:$middle;
+padding:20px;
+letter-spacing: 5px;}
+
+h3{
+padding:0;}
+
+@media screen and (max-width: 600px){
+h1{
+font-size:2rem;}
+}
+
+p{
+letter-spacing:1px;}

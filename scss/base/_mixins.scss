@@ -1,0 +1,16 @@
+@mixin add-background($color){
+	background:$color;
+	@if $color == $purple{
+		color:$white;
+	} @elseif $color == $purple{
+		color:$light-grey;
+	} @elseif $color == $peach{
+		color:$white;
+	} @elseif $color == $peach{
+		color:$light-grey;
+	} @elseif $color == $green-tea{
+		color:$white;
+	} @elseif $color == $white{
+		color:$purple;
+	}
+}

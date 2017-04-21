@@ -1,0 +1,36 @@
+{
+	"version": 3,
+	"file": "../scss/main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/base/_variables.scss",
+		"../scss/base/_normalise.scss",
+		"../scss/base/_mixins.scss",
+		"../scss/base/_base.scss",
+		"../scss/layouts/_footer.scss",
+		"../scss/layouts/_header.scss",
+		"../scss/layouts/_nav.scss",
+		"../scss/modules/_blocks.scss",
+		"../scss/modules/_buttons.scss",
+		"../scss/modules/_components.scss",
+		"../scss/modules/_sections.scss",
+		"../scss/modules/_typography.scss"
+	],
+	"sourcesContent": [
+		"/*\n\nProject-Site-Games\nVersion 1\n\n\n/* Base files */\n@import 'base/_variables.scss';\n@import 'base/_normalise.scss';\n@import 'base/_mixins.scss';\n@import 'base/_base.scss';\n\n/* Layout files */\n@import 'layouts/_footer.scss';\n@import 'layouts/_header.scss';\n@import 'layouts/_nav.scss';\n\n\n/* Module files */\n\n@import 'modules/_blocks.scss';\n@import 'modules/_buttons.scss';\n@import 'modules/_components.scss';\n@import 'modules/_sections.scss';\n@import 'modules/_typography.scss';",
+		"/*Colour Codes*/\r\n\r\n$purple: #8678ab;\r\n\r\n$white: #fff;\r\n\r\n$light-grey: #eeeae7;\r\n\r\n$bluish-grey: #929a9d;\r\n\r\n$peach: #efb68b;\r\n\r\n$green-tea: #addebe;\r\n\r\n/*Padding settings*/\r\n$padding: 14px 24px;\r\n\r\n$middle: center;\r\n\r\n$full_width: 100% 100%;",
+		"/*Header Link*/\r\n\r\nh1 a{\r\ncolor:$white;}\r\n\r\nh1 a:hover{\r\ncolor:$light-grey;}\r\n\r\n/*Body Text*/\r\n\r\nbody{\r\ncolor:$bluish-grey;}",
+		"@mixin add-background($color){\r\n\tbackground:$color;\r\n\t@if $color == $purple{\r\n\t\tcolor:$white;\r\n\t} @elseif $color == $purple{\r\n\t\tcolor:$light-grey;\r\n\t} @elseif $color == $peach{\r\n\t\tcolor:$white;\r\n\t} @elseif $color == $peach{\r\n\t\tcolor:$light-grey;\r\n\t} @elseif $color == $green-tea{\r\n\t\tcolor:$white;\r\n\t} @elseif $color == $white{\r\n\t\tcolor:$purple;\r\n\t}\r\n}",
+		"*{\r\nmargin:0px;\r\npadding:0px;\r\n}\r\n\r\n/*Sticky Footer*/\r\nbody {\r\n  display: flex;\r\n  min-height: 100vh;\r\n  flex-direction: column;\r\n}\r\n\r\ncontent {\r\n  flex: 1;\r\n}\r\n\r\n",
+		"footer{\r\nwidth:100%;\r\n@include add-background($peach);\r\nmin-height:100px;\r\npadding-top:20px;\r\n}",
+		"header{\r\nwidth:100%;\r\nmin-height:100px;\r\n@include add-background($purple);\r\n}",
+		".breadcrumbs li{\r\nfont-size: 1rem;}",
+		".pac_man{\r\nbackground-size:$full_width;\r\nbackground-image:url('../imgs/classicpac.jpg');\r\n}\r\n\r\n.jungle{\r\nbackground-size:$full_width;\r\nbackground-image:url('../imgs/junglerun.jpg');\r\n}\r\n\r\n.connect4{\r\nbackground-size:$full_width;\r\nbackground-image:url('../imgs/connect4.jpg');\r\n}\r\n\r\n.game{\r\nbackground-size:$full_width;\r\nbackground-repeat: no-repeat;\r\ncolor:$white;\r\nmin-height:200px;\r\nmargin-bottom:20px;\r\nopacity: 1;\r\ntransition: opacity .25s ease-in-out;\r\n-moz-transition: opacity .25s ease-in-out;\r\n-webkit-transition: opacity .25s ease-in-out;\r\ntext-align:$middle;\r\npadding-top:70px;\r\n}\r\n\r\n.game_large{\r\nmin-height:500px;\r\npadding-top:200px;\r\n}\r\n\r\n.game:hover{\r\nopacity: 0.8;\r\ncolor:$light_grey;\r\n}",
+		"",
+		"",
+		".expanded{\r\n@include add-background($green-tea);\r\npadding-bottom: 10px;}",
+		"h1, h2, h3{\ntext-align:$middle;\npadding:20px;\nletter-spacing: 5px;}\n\nh3{\npadding:0;}\n\n@media screen and (max-width: 600px){\nh1{\nfont-size:2rem;}\n}\n\np{\nletter-spacing:1px;}"
+	],
+	"mappings": "AAAA;;;;;;gBAMgB;ACNhB,gBAAgB;AAchB,oBAAoB;ACdpB,eAAe;;AAEf,AAAG,EAAD,CAAC,CAAC,CAAA;EACJ,KAAK,EDCG,IAAI;CCDE;;;AAEd,AAAI,EAAF,CAAC,CAAC,AAAA,MAAM,CAAA;EACV,KAAK,EDAQ,OAAO;CCAD;;AAEnB,aAAa;;AAEb,AAAA,IAAI,CAAA;EACJ,KAAK,EDHS,OAAO;CCGD;;;AEXpB,AAAA,CAAC,CAAA;EACD,MAAM,EAAC,GAAI;EACX,OAAO,EAAC,GAAI;CACX;;AAED,iBAAiB;;AACjB,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,IAAK;EACd,UAAU,EAAE,KAAM;EAClB,cAAc,EAAE,MAAO;CACxB;;;AAED,AAAA,OAAO,CAAC;EACN,IAAI,EAAE,CAAE;CACT;;AJFD,kBAAkB;;AKZlB,AAAA,MAAM,CAAA;EACN,KAAK,EAAC,IAAK;EFAV,UAAU,EFSH,OAAO;EEHb,KAAK,EFHC,IAAI;EIDZ,UAAU,EAAC,KAAM;EACjB,WAAW,EAAC,IAAK;CAChB;;;ACLD,AAAA,MAAM,CAAA;EACN,KAAK,EAAC,IAAK;EACX,UAAU,EAAC,KAAM;EHDhB,UAAU,EFCF,OAAO;EECd,KAAK,EFCC,IAAI;CKAX;;;ACJD,AAAa,YAAD,CAAC,EAAE,CAAA;EACf,SAAS,EAAE,IAAK;CAAE;;APiBlB,kBAAkB;;AQlBlB,AAAA,QAAQ,CAAA;EACR,eAAe,EPkBF,IAAI,CAAC,IAAI;EOjBtB,gBAAgB,EAAC,6BAAG;CACnB;;;AAED,AAAA,OAAO,CAAA;EACP,eAAe,EPaF,IAAI,CAAC,IAAI;EOZtB,gBAAgB,EAAC,4BAAG;CACnB;;;AAED,AAAA,SAAS,CAAA;EACT,eAAe,EPQF,IAAI,CAAC,IAAI;EOPtB,gBAAgB,EAAC,2BAAG;CACnB;;;AAED,AAAA,KAAK,CAAA;EACL,eAAe,EPGF,IAAI,CAAC,IAAI;EOFtB,iBAAiB,EAAE,SAAU;EAC7B,KAAK,EPdG,IAAI;EOeZ,UAAU,EAAC,KAAM;EACjB,aAAa,EAAC,IAAK;EACnB,OAAO,EAAE,CAAE;EACX,UAAU,EAAE,wBAAyB;EACrC,eAAe,EAAE,wBAAyB;EAC1C,kBAAkB,EAAE,wBAAyB;EAC7C,UAAU,EPRD,MAAM;EOSf,WAAW,EAAC,IAAK;CAChB;;;AAED,AAAA,WAAW,CAAA;EACX,UAAU,EAAC,KAAM;EACjB,WAAW,EAAC,KAAM;CACjB;;;AAED,AAAK,KAAA,AAAA,MAAM,CAAA;EACX,OAAO,EAAE,GAAI;EACb,KAAK,EP9BQ,OAAO;CO+BnB;;;AGrCD,AAAA,SAAS,CAAA;ERCR,UAAU,EFWC,OAAO;EEDjB,KAAK,EFPC,IAAI;EUFZ,cAAc,EAAE,IAAK;CAAE;;;ACFvB,AAAA,EAAE,EAAE,AAAA,EAAE,EAAE,AAAA,EAAE,CAAA;EACV,UAAU,EXgBD,MAAM;EWff,OAAO,EAAC,IAAK;EACb,cAAc,EAAE,GAAI;CAAE;;;AAEtB,AAAA,EAAE,CAAA;EACF,OAAO,EAAC,CAAE;CAAE;;AAEZ,MAAM,CAAN,MAAM,MAAM,SAAS,EAAE,KAAK;;EAC5B,AAAA,EAAE,CAAA;IACF,SAAS,EAAC,IAAK;GAAE;;;;AAGjB,AAAA,CAAC,CAAA;EACD,cAAc,EAAC,GAAI;CAAE",
+	"names": []
+}
